@@ -9,3 +9,19 @@
 */
 
 // YOUR CODE HERE
+
+let height = [0,123,85,79,63,12,75,42,780,1080,463,425]
+
+let tallest = 0
+let position = 0
+
+while (position < height.length) {
+   let currentHeight = height[position]
+   if ( currentHeight > tallest) [
+      tallest = currentHeight
+   ]
+  
+   position += 1
+}
+
+console.log(tallest)

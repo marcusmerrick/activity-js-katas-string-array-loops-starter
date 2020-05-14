@@ -20,3 +20,34 @@
 */
 
 // YOUR CODE HERE
+let word = 'onomatopoeia'.toLowerCase()
+let letter = 'o'.toLowerCase()
+let position = 0
+let letterCount = 0
+
+while ( position < word.length) {
+   const character = word[position]
+   console.log(character)
+
+   if(character.toLowerCase() === letter.toLowerCase()){
+      letterCount += 1
+   }
+   position += 1
+
+}
+
+console.log(letterCount)
+
+const outputElement = document.querySelector('main')
+
+if(letterCount > 0) {
+
+outputElement.innerHTML = 'The letter ' + 
+   letter + 
+   ' occurs in the word ' + 
+   word + ' ' + 
+   letterCount + ' times.'
+
+} else {
+   outputElement.innerHTML = "No, that letter does not exist in the word."
+}
